@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+	h1 Cadastro de Usuários
+	hr
+	br
+	if messages.erro
+		div(class="alert alert-danger")
+			each msg in messages.erro
+				b= msg
+				br
+	br
+	form(method="POST",action="/usuarios/create",role="form")
+		div(class="form-group")
+			label Nome
+			input(type="text",class="form-control",name="nome",value="#{user.nome || ''}" placeholder="Nome", autofocus, required)
+		div(class="form-group")
+			label E-mail
+			input(type="email",class="form-control",name="email",value="#{user.email || ''}" placeholder="E-mail", required)
+		div(class="form-group")
+			label Site
+			input(type="text",class="form-control",name="site",value="#{user.site || 'http://'}" placeholder="site")
+		div(class="form-group")
+			label Senha
+			input(type="password",class="form-control",name="password",placeholder="Digite sua senha",required)
+		div(class="form-group")
+			label Confirmar senha
+			input(type="password",class="form-control",name="password_confirmar",placeholder="Confirme sua senha",required)
+		button(type="submit",class="btn btn-success") Cadastrar
+	br
+	br
+	a(href="/usuarios") Voltar 
