@@ -4,12 +4,12 @@ Sistema de cadastro teste para o desenvolvimento do TCC, baseada no conceito MVC
 utilizando tecnologias Node.js, Express.js e o banco de dados noSql MongoDB.
 Foi desenvolvida a partir das aulas do canal do desenvovedor [Tiago Porto] no You Tube
 
-A pode ser acessada para testes [aqui].
+A aplicação pode ser acessada para testes [aqui].
 
 ## Instruções
 Na tela de cadastro digite as seguintes informações
 * Email : temporario@user.com.br
-* Senha : temporario2016
+* Senha : admin2016
 
 ![](https://firebasestorage.googleapis.com/v0/b/owlknow-6803b.appspot.com/o/print1.jpg?alt=media&token=cfa8b6ed-406c-4cd9-b38e-9b2c86705475)
 
